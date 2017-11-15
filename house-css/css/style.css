@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-top: 10%;
+    background-color: rgb(240, 240, 240);
+}
+
+.env{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid rgb(98, 80, 80);
+}
+
+.house{
+    height: 150px;
+    width: 170px;
+    background-color: brown;
+}
+
+.top-window, .top-window2{
+height: 10px;
+width: 20px;
+background-color: rgb(175, 175, 13);
+margin-top: 20%;
+margin-left: 10%;
+}
+
+.top-window2{
+
+background-color: rgb(175, 175, 13);
+margin-top: -6%;
+margin-left: 73%;
+}
+
+  
+.bottom-window2{
+    margin-top: -6%;
+    margin-left: 73%;
+    height: 10px;
+    width: 20px;
+    background-color: rgb(175, 175, 13);
+}
+
+.bottom-window1{
+    margin-left: 10%;
+    height: 10px;
+    width: 20px;
+    background-color: rgb(175, 175, 13);
+    margin-top: 31%;
+}
+
+.door{
+    height: 50px;
+    width: 20px;
+     background-color: rgb(66, 48, 22);
+     margin-top: -5%;
+     margin-left: 44%;
+   }
+.sun-ray{
+    background-color: rgba(255, 255, 6, 0.367);
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin-left: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: -86px;
+
+}
+.sun{
+    position: relative;
+    background-color: rgb(255, 255, 21);
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    
+
+}
+
+.moon-ray{
+    background-color: rgba(167, 167, 167, 0.265);
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin-left: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: -76px;
+}
+
+.moon{
+    position: relative;
+    background-color: rgb(198, 198, 198);
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
+
+.background{
+    transition: 3s ease infinite;
+    animation-name: spina;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
